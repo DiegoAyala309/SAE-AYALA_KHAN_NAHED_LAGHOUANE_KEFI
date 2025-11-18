@@ -1674,50 +1674,76 @@
             </section>
 
             <section class="mission-section">
-                <h2 id="conclusion">Conclusion générale</h2>
-                <h3>1. Bilan global des trois missions</h3>
+                <h2 id="conclusion">Synthèse Globale et Bilan des Missions KDou</h2>
                 <p>
-                    Au terme de ces trois missions, KDou dispose d'une vision plus claire de ses données commerciales et
-                    de la manière dont elles peuvent être exploitées pour améliorer à la fois sa rentabilité et sa démarche
-                    éco responsable
+                    Au terme de ces trois missions, l'entreprise KDou dispose désormais d'une vision claire de ses données
+                    commerciales. Ce projet a permis de passer d'une simple observation de données brutes sur Excel à une véritable
+                    aide à la décision via SQL, en cohérence avec les enjeux de rentabilité et de responsabilité environnementale de
+                    l'entreprise.
                 </p>
-                <p>Chaque mission a joué un rôle complémentaire</p>
+                <p>Les trois étapes du projet ont joué un rôle complémentaire :</p>
+
+                <h3>1. Mission 1 : Analyse de la structure et de la qualité des données</h3>
+                <p>
+                    La première phase, réalisée sur Excel, a consisté à comprendre l'organisation de la base de données (clés
+                    primaires et étrangères). Cette analyse a révélé des problèmes critiques de qualité qui freinent l'efficacité
+                    commerciale :
+                </p>
                 <ul>
-                    <li>Mission 1: Compréhension du modèle de données initial dans Excel et identification des problèmes de qualité</li>
-                    <li>Mission 2: Passage à une base relationnelle Access et production de premiers indicateurs opérationnels</li>
-                    <li>Mission 3: Exploitation de la nouvelle base enrichie avec SQL pour construire des indicateurs plus avancés</li>
+                    <li><strong>Données incomplètes :</strong> Manque fréquent d'adresses ou de numéros de téléphone, compliquant le
+                        contact avec les partenaires.</li>
+                    <li><strong>Manque de standardisation :</strong> Formats hétérogènes pour les codes postaux et les téléphones,
+                        et noms de pays non normalisés (ex: "U.S.A." vs "Etats-Unis"), ce qui fausse les statistiques.</li>
+                    <li><strong>Solutions proposées :</strong> Il a été recommandé de rendre certains champs obligatoires (email) et
+                        de définir des listes prédéfinies pour normaliser les saisies.</li>
                 </ul>
 
-                <h3>2. Apports pour l'entreprise KDou</h3>
-                <p>Les analyses réalisées apportent plusieurs enseignements utiles pour la stratégie de KDou</p>
-                <ul>
-                    <li>Meilleure connaissance de la clientèle: Clients sans commandes, clients les plus actifs, réseaux pilotes partenaires</li>
-                    <li>Vision plus fine de l'offre: Produits très coûteux, produits carnés non vendus, références à faible rotation</li>
-                    <li>Analyse de la provenance: Répartition du chiffre d'affaires par pays et part des fournisseurs hors UE</li>
-                    <li>Suivi logistique: Couples de clients pour optimiser les tournées et délais moyens ou retards de livraison</li>
-                </ul>
+                <h3>2. Mission 2 : Requêtes opérationnelles et connaissance du catalogue</h3>
                 <p>
-                    Ces résultats permettent à KDou d'orienter ses décisions: Réduire certaines références peu performantes,
-                    renforcer ou diversifier ses fournisseurs, cibler des actions commerciales sur certains clients et améliorer
-                    l'organisation des livraisons
+                    Le passage à une base relationnelle Access a permis de créer des requêtes SQL pour répondre aux besoins
+                    quotidiens et mieux connaître l'offre et la clientèle :
+                </p>
+                <ul>
+                    <li><strong>Localisation et Contact :</strong> Recherche de coordonnées précises (ex: le fournisseur Jean-Guy
+                        Lauzon) et localisation des clients (ex: clients parisiens).</li>
+                    <li><strong>Filtrage des produits :</strong> Identification des produits selon leur origine et leur prix (ex:
+                        produits US &lt; 25 €) ou leur conditionnement (carton vs verre).</li>
+                    <li><strong>Relations commerciales :</strong> Repérage des clients inactifs (sans commande) et des fournisseurs
+                        sans produits référencés.</li>
+                </ul>
+
+                <h3>3. Mission 3 : Indicateurs stratégiques et dimension éco-responsable</h3>
+                <p>
+                    La dernière phase a exploité la puissance de SQL pour construire des indicateurs avancés, offrant à KDou des
+                    leviers d'action concrets sur deux axes majeurs :
                 </p>
 
-                <h3>3. Dimension éco responsable</h3>
-                <p>Les indicateurs construits mettent en avant plusieurs leviers pour limiter l'impact environnemental</p>
+                <h4>A. Optimisation commerciale et logistique</h4>
+                <p>L'analyse a permis une vision plus fine de l'activité :</p>
                 <ul>
-                    <li>Réduction du gaspillage: Identification des produits à faible rotation ou jamais vendus</li>
-                    <li>Optimisation des transports: Livraisons groupées à Paris, analyse des retards et des délais moyens</li>
-                    <li>Dépendance géographique: Mesure du chiffre d'affaires hors UE et par pays fournisseur</li>
-                    <li>Sensibilisation clients: Focus sur les catégories Boissons et Desserts et sur les clients qui en consomment le plus</li>
+                    <li><strong>Suivi des ventes :</strong> Calcul du chiffre d'affaires annuel sur des catégories clés comme
+                        "Boissons" et "Desserts".</li>
+                    <li><strong>Performance logistique :</strong> Calcul des délais moyens de livraison par pays, suivi des retards
+                        annuels et identification de couples de clients pour optimiser les tournées de livraison.</li>
+                    <li><strong>Réseau de partenaires :</strong> Comparaison des commandes entre les clients "pilotes" et leurs
+                        partenaires.</li>
                 </ul>
-                <p>
-                    En s'appuyant sur ces indicateurs, KDou peut ajuster son catalogue, privilégier des fournisseurs plus proches,
-                    proposer des alternatives plus durables et réduire les déplacements inutiles
-                </p>
 
+                <h4>B. Démarche éco-responsable</h4>
+                <p>Les indicateurs fournissent des pistes solides pour réduire l'impact environnemental :</p>
+                <ul>
+                    <li><strong>Anti-gaspillage :</strong> Identification des produits "Viandes" jamais commandés ou à faible
+                        rotation, permettant de réduire les stocks inutiles.</li>
+                    <li><strong>Réduction de l'empreinte carbone :</strong> Mesure de la dépendance aux transports lointains via
+                        l'analyse du chiffre d'affaires réalisé avec les fournisseurs hors Union Européenne.</li>
+                </ul>
+
+                <h3>Conclusion</h3>
                 <p>
-                    En conclusion, la combinaison d'Excel, d'Access et du langage SQL a permis de passer d'une simple observation des données brutes
-                    à une véritable <strong>aide à la décision</strong> pour KDou, en cohérence avec ses enjeux de rentabilité et de responsabilité environnementale
+                    Grâce à la combinaison d'Excel, d'Access et du langage SQL, KDou peut désormais orienter ses décisions
+                    stratégiques : réduire les références peu performantes, privilégier des fournisseurs plus proches, et améliorer
+                    l'organisation logistique. Ces actions permettront d'améliorer la rentabilité tout en respectant les engagements
+                    écologiques de l'entreprise.
                 </p>
             </section>
         </main>
